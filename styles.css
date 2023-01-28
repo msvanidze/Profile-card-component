@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    background: url(images/bg-pattern-top.svg) right 45vw bottom 45vh no-repeat,
+                url(images/bg-pattern-bottom.svg) 45vw 45vh no-repeat hsl(185, 75%, 39%);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 326px;
+    height: 374px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-image {
+    width: 326px;
+    height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 115px;
+    margin-top: 92px;
+    box-sizing: border-box;
+}
+
+.name {
+    margin-top: 72px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.32px;
+}
+
+.name span {
+    font-weight: 400;
+}
+
+.city {
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.36px;
+}
+
+.line {
+    margin-top: 28px;
+    width: 326px;
+    height: 1px;
+    background-color: #E8E9EC;
+}
+
+.stats-main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 24px;
+    margin-left: 41px;
+    height: 40px;
+    width: 326px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 30%;
+}
+
+.numbers {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.32px;
+}
+
+.labels {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12.4px;
+    letter-spacing: 1.5px;
+}
+
+@media only screen and (min-width: 376px)  {
+    .main, .bg-image, .line {
+        width: 350px;
+    }
+}
